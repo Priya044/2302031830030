@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Setup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .section img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .buttons-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn.selected {
+            background: black;
+            color: white;
+        }
+        .save-btn {
+            width: 100%;
+            padding: 15px;
+            background: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="back-icon.png" alt="Back">
+            User Profile Setup
+        </div>
+        <h3>User Preferences</h3>
+        <div class="section">
+            <img src="room-icon.png" alt="Rooms">
+            <div>
+                <strong>Type of rooms for décor</strong>
+                <p>Select all that apply</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="style-icon.png" alt="Style">
+            <div>
+                <strong>Preferred styles</strong>
+                <p>Choose your favorite styles</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="color-icon.png" alt="Color">
+            <div>
+                <strong>Color preferences</strong>
+                <p>Pick your preferred colors</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="budget-icon.png" alt="Budget">
+            <div>
+                <strong>Budget range</strong>
+                <p>Select your budget level</p>
+            </div>
+        </div>
+        
+        <h3>Budget Range</h3>
+        <div class="buttons-group">
+            <button class="btn">Low</button>
+            <button class="btn">Medium</button>
+            <button class="btn">High</button>
+        </div>
+        <p>Move the slider to set your budget</p>
+        
+        <h3>Room Types</h3>
+        <div class="buttons-group">
+            <button class="btn"><img src="livingroom-icon.png" alt="Living Room"> Living Room</button>
+            <button class="btn"><img src="bedroom-icon.png" alt="Bedroom"> Bedroom</button>
+            <button class="btn"><img src="kitchen-icon.png" alt="Kitchen"> Kitchen</button>
+        </div>
+        
+        <h3>Preferred Styles</h3>
+        <div class="buttons-group">
+            <button class="btn">Modern</button>
+            <button class="btn">Minimalist</button>
+            <button class="btn">Traditional</button>
+        </div>
+        <p>Choose your favorite style</p>
+        
+        <h3>Color Preferences</h3>
+        <div class="buttons-group">
+            <button class="btn">Light</button>
+            <button class="btn">Neutral</button>
+            <button class="btn">Bold</button>
+        </div>
+        <p>Select your preferred color scheme</p>
+        
+        <button class="save-btn">Save Preferences</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg p-4">
+        
+        <!-- Header -->
+        <div class="flex items-center mb-4">
+            <button class="text-xl">⬅</button>
+            <h1 class="text-xl font-bold ml-2">Checkout</h1>
+        </div>
+        
+        <!-- Order Summary -->
+        <h2 class="text-lg font-semibold">Order Summary</h2>
+        <div class="grid grid-cols-2 gap-3 mt-2">
+            <div class="bg-gray-100 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Product 1" class="rounded">
+                <p class="mt-1">Product Name 1</p>
+                <p class="font-bold">$XX.XX</p>
+            </div>
+            <div class="bg-gray-100 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Product 2" class="rounded">
+                <p class="mt-1">Product Name 2</p>
+                <p class="font-bold">$XX.XX</p>
+            </div>
+        </div>
+        
+        <!-- Shipping Information -->
+        <label class="block font-semibold mt-4">Shipping Information</label>
+        <input type="text" placeholder="Enter your shipping details" class="w-full p-2 border rounded mt-1">
+        
+        <!-- Payment Options -->
+        <label class="block font-semibold mt-4">Payment Options</label>
+        <select class="w-full p-2 border rounded mt-1">
+            <option>Select payment method</option>
+            <option>Credit Card</option>
+            <option>PayPal</option>
+            <option>Apple Pay</option>
+        </select>
+        
+        <!-- Apply Discount -->
+        <label class="block font-semibold mt-4">Apply Discount</label>
+        <input type="text" placeholder="Enter discount code" class="w-full p-2 border rounded mt-1">
+        
+        <!-- Complete Purchase Button -->
+        <button class="w-full bg-black text-white p-3 rounded mt-4">Complete Purchase</button>
+        
+    </div>
+</body>
+</html>

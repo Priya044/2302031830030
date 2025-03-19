@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg p-4">
+        <h1 class="text-xl font-bold">Inspiration Gallery</h1>
+        
+        <!-- Categories -->
+        <div class="flex gap-3 mt-4">
+            <div class="flex flex-col items-center bg-gray-200 p-2 rounded w-1/2">
+                🏡
+                <span>Styled Rooms</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-200 p-2 rounded w-1/2">
+                🖼️
+                <span>Décor Arrangements</span>
+            </div>
+        </div>
+        
+        <!-- Save to Inspiration Board -->
+        <button class="w-full bg-black text-white p-2 rounded mt-4">Save to Inspiration Board</button>
+        
+        <!-- Inspiration Items -->
+        <div class="grid grid-cols-2 gap-3 mt-4">
+            <div class="bg-gray-100 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Dining Room Revamp" class="rounded">
+                <p class="mt-1 font-semibold">Dining Room Revamp</p>
+                <p class="text-sm text-gray-600">By Designer PQR</p>
+            </div>
+            <div class="bg-gray-100 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Home Office Ideas" class="rounded">
+                <p class="mt-1 font-semibold">Home Office Ideas</p>
+                <p class="text-sm text-gray-600">By Designer LMN</p>
+            </div>
+        </div>
+        
+        <!-- Filter by Style -->
+        <h2 class="mt-4 text-lg font-semibold">Filter by Style</h2>
+        <div class="flex gap-3 mt-2">
+            <div class="flex flex-col items-center bg-gray-200 p-2 rounded w-1/2">
+                🎨
+                <span>Modern</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-200 p-2 rounded w-1/2">
+                🏺
+                <span>Vintage</span>
+            </div>
+        </div>
+        
+        <!-- Explore More Styles -->
+        <button class="w-full bg-black text-white p-2 rounded mt-4">Explore More Styles</button>
+    </div>
+</body>
+</html>
