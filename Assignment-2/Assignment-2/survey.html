@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .button-group button, .room-group button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .button-group button:hover, .room-group button:hover {
+            background-color: #ddd;
+        }
+        .input-field {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background: #333;
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .footer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .footer-text {
+            color: #333;
+        }
+        .footer-text h3 {
+            margin: 0;
+        }
+        .footer-text p {
+            margin: 5px 0 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Survey</h1>
+
+    <div class="section">
+        <h2>Select Style</h2>
+        <div class="button-group">
+            <button>Modern</button>
+            <button>Traditional</button>
+            <button>Scandinavian</button>
+            <button>Bohemian</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Select Color Scheme</h2>
+        <div class="button-group">
+            <button>Neutral</button>
+            <button>Warm Tones</button>
+            <button>Cool Tones</button>
+            <button>Bold Colors</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Budget</h2>
+        <input type="text" class="input-field" placeholder="Enter your budget in USD">
+    </div>
+
+    <div class="section">
+        <h2>Select Room Types</h2>
+        <div class="room-group">
+            <button>Living Room</button>
+            <button>Bedroom</button>
+            <button>Kitchen</button>
+            <button>Bathroom</button>
+            <button>Office</button>
+        </div>
+    </div>
+
+    <button class="submit-btn">Submit</button>
+</div>
+
+<div class="footer">
+    <img src="footer_section.png" alt="User Icon">
+    <div class="footer-text">
+        <h3>Welcome!</h3>
+        <p>Personalize your home decor experience.</p>
+    </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Decor Store</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .section {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .featured-products {
+        display: flex;
+        gap: 20px;
+    }
+
+    .product {
+        flex: 1;
+        overflow: hidden;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .product-info {
+        padding: 10px 0;
+    }
+
+    .product h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .product p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .price {
+        font-weight: bold;
+        color: #000;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .review:last-child {
+        border-bottom: none;
+    }
+
+    .review .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .review img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .rating {
+        font-size: 14px;
+        color: #888;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+
+    .btn:hover {
+        background: #555;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="section">
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="living_room.png" alt="Elegant Living Room">
+                <div class="product-info">
+                    <h3>Elegant Living Room Collection</h3>
+                    <p class="price">$499.99</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="tv_wall.png" alt="TV Wall Unit">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Recent Reviews</h2>
+        <div class="reviews">
+            <div class="review">
+                <div class="user">
+                    <img src="user1.png" alt="User 1">
+                    <div>
+                        <p><strong>User123</strong></p>
+                        <p>Great purchase!</p>
+                    </div>
+                </div>
+                <div class="rating">4.9/5</div>
+            </div>
+            <div class="review">
+                <div class="user">
+                    <img src="user2.png" alt="User 2">
+                    <div>
+                        <p><strong>HomeDecorLover</strong></p>
+                        <p>Excellent quality</p>
+                    </div>
+                </div>
+                <div class="rating">5/5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="gallery">
+            <img src="art_wall.png" alt="Art Wall">
+        </div>
+    </div>
+
+    <a href="#" class="btn">View More</a>
+
+</div>
+
+</body>
+</html>
